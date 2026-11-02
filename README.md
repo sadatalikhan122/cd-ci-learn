@@ -64,3 +64,4 @@ Change the text back, commit and push again. Now tests pass and deployment runs.
 On pull requests, tests run but deployment is skipped.
 
 Note: GitHub Pages serves static files only. It will not run a FastAPI backend. To deploy FastAPI, you need a separate backend hosting platform or VPS.
+url= https://sadatalikhan122.github.io/cd-ci-learn/
