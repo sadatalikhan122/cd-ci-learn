@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello CI/CD Project</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      background: #f2f6ff;
+      color: #1c2a44;
+    }
+    main {
+      width: min(90vw, 430px);
+      padding: 36px 24px;
+      text-align: center;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(34, 57, 104, 0.12);
+    }
+    h1 { font-size: 30px; margin: 0 0 12px; }
+    p { line-height: 1.6; }
+    button {
+      margin-top: 14px;
+      border: 0;
+      border-radius: 9px;
+      padding: 12px 22px;
+      background: #2563eb;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover { background: #1e40af; }
+    #message { font-weight: bold; min-height: 28px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hello CI/CD!</h1>
+    <p>My first website deployed automatically using GitHub Actions.</p>
+    <button id="actionButton" onclick="showMessage()">Click Me</button>
+    <p id="message" aria-live="polite"></p>
+  </main>
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "CI/CD pipeline is working!";
+    }
+  </script>
+</body>
+</html>
