@@ -10,7 +10,7 @@ class WebsiteTests(unittest.TestCase):
 
     def test_expected_heading(self):
         html = SITE_FILE.read_text(encoding="utf-8")
-        self.assertIn("<h1>Hello!</h1>", html)
+        self.assertIn("<h1>Hello! This is my First CI/CD deployment.</h1>", html)
 
     def test_button_is_present(self):
         html = SITE_FILE.read_text(encoding="utf-8")
